@@ -52,13 +52,13 @@ Is card registered?
      ↓
      Yes
      ↓
-Enter User Password
+Enter User Password 
      ↓
-Correct Password?
-     ↓
-     Yes
-     ↓
-Access Granted
+Correct Password? → No → Reprompt password up to 3 times  → Incorrect password
+     ↓                             ↓                                ↓
+     Yes                    Correct password               Trigger alarm system
+     ↓                             ↓
+Access Granted               Access Granted
 ```
 
 Three consecutive incorrect password attempts trigger the alarm mode.
@@ -119,8 +119,6 @@ During alarm mode:
 * 4×4 Keypad
 * Passive Buzzer
 * Status LEDs
-
-*(Add hardware images here)*
 
 ---
 
