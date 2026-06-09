@@ -4,7 +4,7 @@ A password-protected RFID access control system built with the **STM32F446RE**. 
 
 ---
 
-## 📹 Demo Video
+## Demo Video
 
 > *(https://youtu.be/hUpy1Zz4KwQ?si=nej2KByEA1a0SdGY)*
 
@@ -13,7 +13,7 @@ A password-protected RFID access control system built with the **STM32F446RE**. 
 ---
 ## Schematic Diagram
 
-<img width="3507" height="2480" alt="image" src="https://github.com/user-attachments/assets/aedd1929-c055-4d36-8813-544b6b75bcb3" />
+<img width="1497" height="891" alt="image" src="https://github.com/user-attachments/assets/6a6bd3e0-1bb1-41a1-b26a-ece12fe04452" />
 
 ## Features
 
@@ -68,7 +68,7 @@ Three consecutive incorrect password attempts trigger the alarm mode.
 
 ---
 
-## 📂 Functionalities
+## Functionalities
 
 ### A — Register RFID Tag
 
@@ -114,7 +114,7 @@ During alarm mode:
 
 ---
 
-## 📷 System Components
+## System Components
 
 * STM32F446RE
 * RC522 RFID Reader
@@ -125,7 +125,7 @@ During alarm mode:
 
 ---
 
-## 📚 Libraries Used
+## Libraries Used
 
 * STM32 HAL
 * RC522 RFID Library
