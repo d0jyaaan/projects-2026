@@ -1,6 +1,6 @@
 # STM32 RFID Access Control System
 
-A password-protected RFID access control system built with the **STM32F446RE**. The project combines RFID authentication, keypad password verification, OLED display feedback, LEDs, and a buzzer alarm to create a simple two-factor security system.
+A password-protected RFID access control system built with the **STM32F446RE**. The project combines RFID authentication, keypad password verification, OLED display feedback, LEDs and a buzzer alarm to create a simple two-factor security system.
 
 ---
 ## Picture
