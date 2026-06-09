@@ -3,7 +3,13 @@
 A password-protected RFID access control system built with the **STM32F446RE**. The project combines RFID authentication, keypad password verification, OLED display feedback, LEDs, and a buzzer alarm to create a simple two-factor security system.
 
 ---
+## Picture
+Unpowered
+<img width="1280" height="913" alt="image" src="https://github.com/user-attachments/assets/18f8d779-1cab-487f-8311-93c70467f2ff" />
+Powered
+<img width="1280" height="936" alt="image" src="https://github.com/user-attachments/assets/9d3695db-cafe-425c-876a-9e21c5061b7e" />
 
+---
 ## Demo Video
 
 > *(https://youtu.be/hUpy1Zz4KwQ?si=nej2KByEA1a0SdGY)*
