@@ -11,6 +11,9 @@ A password-protected RFID access control system built with the **STM32F446RE**. 
 [![Watch Demo](https://img.shields.io/badge/YouTube-Watch%20Demo-red)](YOUR_YOUTUBE_LINK)
 
 ---
+## Schematic Diagram
+
+<img width="3507" height="2480" alt="image" src="https://github.com/user-attachments/assets/aedd1929-c055-4d36-8813-544b6b75bcb3" />
 
 ## Features
 
