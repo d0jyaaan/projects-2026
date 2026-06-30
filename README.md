@@ -1,6 +1,6 @@
 # Bluetooth-Controlled Smart RC Car (STM32F446RE)
 
-A Bluetooth-controlled robotic car built on the **STM32 Nucleo-F446RE** board. The car is driven over **HC-05 Bluetooth** from a custom **MIT App Inventor** Android app (joystick control, horn, and headlight buttons), and is protected by an **HC-SR04 ultrasonic sensor** that automatically stops the car and sounds a buzzer if it gets too close to an obstacle while moving forward.
+A Bluetooth-controlled robotic car built on the **STM32 Nucleo-F446RE** board. The car is driven over **HC-05 Bluetooth** from a custom **MIT App Inventor** Android app (joystick control, horn and headlight buttons), and is protected by an **HC-SR04 ultrasonic sensor** that automatically stops the car and sounds a buzzer if it gets too close to an obstacle while moving forward.
 
 ---
 
@@ -56,21 +56,17 @@ A Bluetooth-controlled robotic car built on the **STM32 Nucleo-F446RE** board. T
 
 | Riew View 2 | Front View |
 |---|---|
-|  |  |
+| <img width="320" alt="image" src="https://github.com/user-attachments/assets/5f1180e1-ce8c-423d-bd8c-8af1a1c702ef" /> | <img width="320" alt="image" src="https://github.com/user-attachments/assets/79ef8d1e-739e-41be-be58-0f7e9fa719b6" /> |
 
 ---
 
 ## MIT App Inventor Application
 
-The car is controlled by a custom Android app built with **MIT App Inventor**, featuring a joystick for movement, a horn button, and a headlight toggle, all communicating with the car over Bluetooth (HC-05).
+The car is controlled by a custom Android app built with **MIT App Inventor**, featuring a joystick for movement, a horn button and a headlight toggle, all communicating with the car over Bluetooth (HC-05).
 
-_Add screenshots of the app interface and a link/QR code to the `.aia` project or compiled `.apk` below._
+<img width="320"  alt="image" src="https://github.com/user-attachments/assets/c0480506-2bdf-436c-8275-d553ae4058d1" />
 
-| App Home Screen | Control Screen |
-|---|---|
-| ![App Home](./assets/app_home.png) | ![App Controls](./assets/app_controls.png) |
-
-- 📱 [Download the compiled `.apk`](./Bluetooth_Joystick.apk)
+- [Download the compiled .apk](./Bluetooth_Joystick.apk)
 
 ---
 
@@ -140,7 +136,7 @@ Identical logic to `ramp_left_motors`, but operates on the **right** side motors
 ### `void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)`
 Interrupt callback fired by **TIM1 CH1** input-capture edges, used to time the HC-SR04 echo pulse:
 - On the first (rising-edge) capture, records `timeValue1` and switches the input capture polarity to falling edge.
-- On the second (falling-edge) capture, records `timeValue2`, computes the elapsed tick `difference` (handling timer counter wraparound), converts it to `distance` in cm using the speed of sound (`difference * 0.034 / 2`), resets the polarity back to rising edge, and disables the capture interrupt until the next `HCSR04_Read()` call.
+- On the second (falling-edge) capture, records `timeValue2`, computes the elapsed tick `difference` (handling timer counter wraparound), converts it to `distance` in cm using the speed of sound (`difference * 0.034 / 2`), resets the polarity back to rising edge and disables the capture interrupt until the next `HCSR04_Read()` call.
 
 ### `void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)`
 Interrupt callback fired when a byte is received on **USART1** (HC-05 link). Implements a simple variable-length packet receiver keyed off `rxBuffer[0]` (the command ID):
@@ -176,7 +172,7 @@ The `while (1)` loop in `main()` runs continuously and performs four jobs every 
 2. **Poll the ultrasonic sensor every 60 ms** — calls `HCSR04_Read()` on a non-blocking timer (`HAL_GetTick()`), kicking off a new distance measurement without stalling the loop.
 
 3. **Update motor ramping every 20 ms:**
-   - If the car is commanded to move **forward** and the last measured `distance` is below `MAXIMUM_DISTANCE` (15 cm), the target speed is forced to 0, the buzzer sounds, and the red warning LED turns on.
+   - If the car is commanded to move **forward** and the last measured `distance` is below `MAXIMUM_DISTANCE` (15 cm), the target speed is forced to 0, the buzzer sounds and the red warning LED turns on.
    - Otherwise (distance is safe), the buzzer stops and the red LED turns off.
    - `ramp_left_motors()` and `ramp_right_motors()` are called once per 20 ms tick to gradually step the motors toward their target speed/direction.
 
