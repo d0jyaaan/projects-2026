@@ -50,13 +50,13 @@ A Bluetooth-controlled robotic car built on the **STM32 Nucleo-F446RE** board. T
 
 ## Project Gallery
 
-| Top View | Side View | Rear View |
+| Top View | Side View | Rear View 1 |
 |---|---|---|
 | <img width="320" alt="Top view" src="https://github.com/user-attachments/assets/5bffcb82-fdd2-432a-9a55-b467ee897b69" /> | <img width="320" alt="Side view" src="https://github.com/user-attachments/assets/c5e051e7-48de-4e3a-80d8-31ef59878367" /> | <img width="320" alt="Rear view" src="https://github.com/user-attachments/assets/e4a2f975-5b33-4007-a7ac-0b0a965eff8c" /> |
 
-| Front View |
-|---|
-| ![Front View](./assets/front_view.jpg) |
+| Riew View 2 | Front View |
+|---|---|
+| |  |
 
 ---
 
