@@ -56,7 +56,7 @@ A Bluetooth-controlled robotic car built on the **STM32 Nucleo-F446RE** board. T
 
 | Riew View 2 | Front View |
 |---|---|
-| |  |
+|  |  |
 
 ---
 
@@ -70,8 +70,7 @@ _Add screenshots of the app interface and a link/QR code to the `.aia` project o
 |---|---|
 | ![App Home](./assets/app_home.png) | ![App Controls](./assets/app_controls.png) |
 
-- 📦 [Download the `.aia` source project](./app/CarController.aia)
-- 📱 [Download the compiled `.apk`](./app/CarController.apk)
+- 📱 [Download the compiled `.apk`](./Bluetooth_Joystick.apk)
 
 ---
 
