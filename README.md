@@ -1,4 +1,4 @@
-# Bluetooth-Controlled Smart RC Car (STM32F446RE)
+# Bluetooth-Controlled Robot Car (STM32F446RE)
 
 A Bluetooth-controlled robotic car built on the **STM32 Nucleo-F446RE** board. The car is driven over **HC-05 Bluetooth** from a custom **MIT App Inventor** Android app (joystick control, horn and headlight buttons), and is protected by an **HC-SR04 ultrasonic sensor** that automatically stops the car and sounds a buzzer if it gets too close to an obstacle while moving forward.
 
@@ -187,9 +187,3 @@ The `while (1)` loop in `main()` runs continuously and performs four jobs every 
 | `1` | X value (0–251) | Y value (0–251) | Joystick: left motor speed/direction (X), right motor speed/direction (Y). 0–125 = forward, 126–251 = backward |
 | `2` | `1` / `0` | — | Horn ON / OFF |
 | `3` | `1` / `0` | — | Headlight ON / OFF |
-
----
-
-## License
-
-This project's firmware is built on top of STMicroelectronics' HAL drivers (see header in `main.c` for the original copyright/license terms). Add your own project license here (e.g. MIT) if you intend to share the rest of the code/app freely.
